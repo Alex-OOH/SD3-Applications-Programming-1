@@ -5,13 +5,18 @@ import java.text.NumberFormat;
 public class Main {
 
     public static void main(String[] args) {
-        
+
+        Investment inv = new Investment(100.0, 8.0, 10);
+        System.out.println(inv);
+
+        //--Investment[] investmentArray = new Investment[5];
 
         // displayLine a welcome message
         Console.displayLine("Welcome to the Future Value Calculator");
         Console.displayLine();
         String choice = "y";
 
+        //--int index = 0;
 
         while (choice.equalsIgnoreCase("y")) {
 
@@ -23,7 +28,11 @@ public class Main {
             int years
                     = Console.getInt("Enter number of years:      ");
 
-       
+        //--Invesment i = new Investment(monthlyInvestment, yearlyInterestRate, years);
+
+        //--investmentArray[index] = i;
+        //--index++;
+
 
             // see if the user wants to continue
             choice = Console.getString("Continue? (y/n): ");
